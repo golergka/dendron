@@ -39,7 +39,25 @@
         "aliases": [
           "markdown"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "path": "./syntaxes/block-anchor.inject.json",
+        "scopeName": "markdown.block-anchor",
+        "injectTo": ["text.html.markdown"]
+      }
+    ],
+    "colors": [
+      {
+        "id": "blockanchor.markdown",
+        "description": "Color for block anchors in markdown.",
+        "defaults": {
+          "dark": "editorGhostText.foreground",
+          "light": "editorGhostText.foreground",
+          "highContrast": "editor.foreground"
+        }
       }
     ],
     "views": {

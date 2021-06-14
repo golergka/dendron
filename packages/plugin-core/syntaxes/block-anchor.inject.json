@@ -1,0 +1,15 @@
+{
+  "scopeName": "dendron.markdown-extensions",
+  "injectionSelector": "L:meta.paragraph.markdown",
+  "patterns": [
+    {
+      "include": "#block-anchor"
+    }
+  ],
+  "repository": {
+    "block-anchor": {
+      "match": "\\^([\\w-]+)\\w*(\\n|$)",
+      "name": "block-anchor.markdown"
+    }
+  },
+}
