@@ -55,6 +55,10 @@ import { CalendarView } from "./views/CalendarView";
 import { SchemaWatcher } from "./watchers/schemaWatcher";
 import { WindowWatcher } from "./windowWatcher";
 import { WorkspaceWatcher } from "./WorkspaceWatcher";
+import {
+  SEMANTIC_TOKENS_LEGEND,
+  SemanticTokensProvider,
+} from "./features/SemanticTokensProvider";
 
 let _DendronWorkspace: DendronWorkspace | null;
 
@@ -490,6 +494,11 @@ export class DendronWorkspace {
     vscode.languages.registerFoldingRangeProvider(
       mdLangSelector,
       new FrontmatterFoldingRangeProvider()
+    );
+    vscode.languages.registerDocumentSemanticTokensProvider(
+      mdLangSelector,
+      new SemanticTokensProvider(),
+      SEMANTIC_TOKENS_LEGEND
     );
     completionProvider.activate(context);
   }
