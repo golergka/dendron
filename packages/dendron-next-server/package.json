@@ -29,6 +29,7 @@
     "**/common-all/**"
   ],
   "dependencies": {
+    "@ant-design/icons": "^4.6.2",
     "@chakra-ui/react": "^1.0.0",
     "@dendronhq/common-all": "^0.50.0",
     "@dendronhq/common-frontend": "^0.50.0",
@@ -38,6 +39,7 @@
     "@reduxjs/toolkit": "^1.5.1",
     "@types/jest": "^26.0.20",
     "@types/react": "^17.0.5",
+    "ajv": "^8.6.0",
     "antd": "^4.15.4",
     "autoprefixer": "^10.2.5",
     "aws-amplify": "^3.3.23",
