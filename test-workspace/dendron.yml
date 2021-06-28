@@ -21,7 +21,8 @@ site:
     siteHierarchies:
         - dendron
         - bar
-    siteRootDir: docs
+        - fppp
+    siteRootDir: docs/aaaax
     logo: vault/assets/images/logo.png
     siteFaviconPath: vault/assets/images/favicon.ico
     siteUrl: 'https://foo.dev.dendron.so'
@@ -48,6 +49,11 @@ site:
             - vault2
             - vault
             - vault2
+    siteUsePrettyRefs: true
+    useSiteRepoDir: true
+    siteNotesDir: docs/bbbbx
+    assetsPrefix: docs/ccccx
+    siteRepoDir: docs/ddddx
 dev:
     enableWebUI: true
     nextServerUrl: 'http://localhost:3000'
