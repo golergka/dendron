@@ -127,6 +127,14 @@ export const DENDRON_REMOTE_VAULTS: Entry[] = [
   },
 ];
 
+export const VAULT_TEMPLATES: Entry[] = [
+  {
+    name: "journal",
+    description: "journal templating",
+    data: "https://github.com/dendronhq/dendron-site.git",
+  }
+];
+
 export const DENDRON_COMMANDS: { [key: string]: CommandEntry } = {
   // --- Notes
   BROWSE_NOTE: {
@@ -791,6 +799,7 @@ export enum WORKSPACE_ACTIVATION_CONTEXT {
   // UNSET - Indicates this is the first Workspace Launch
   "NORMAL", // Normal Launch; No Special Behavior
   "TUTORIAL", // Launch the Tutorial
+  "JOURNAL", // Journal Template
 }
 
 // export const GLOBAL_STATE = {
