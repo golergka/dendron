@@ -77,6 +77,7 @@ const _EXTENSIONS: ConfigUpdateEntry[] = [
   { default: "dendron.dendron-paste-image" },
   { default: "dendron.dendron-markdown-shortcuts" },
   { default: "dendron.dendron-markdown-preview-enhanced" },
+  { default: "redhat.vscode-yaml" }, // for validation in .yml files
   { default: "dendron.dendron-markdown-links", action: "REMOVE" },
   { default: "dendron.dendron-markdown-notes", action: "REMOVE" },
   { default: "shd101wyy.markdown-preview-enhanced", action: "REMOVE" },

@@ -23,6 +23,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
+    "chalk": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -31,14 +32,14 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "execa": "^5.0.0",
     "husky": "^4.2.5",
     "lerna": "^3.19.0",
     "lint-staged": ">=10",
     "lodash": "^4.17.15",
     "prettier": "^2.0.4",
     "standard-version": "^8.0.0",
-    "execa": "^5.0.0",
-    "chalk": "^4.1.1"
+    "typescript-json-schema": "^0.50.1"
   },
   "scripts": {
     "setup": "yarn && yarn bootstrap:bootstrap && yarn bootstrap:build && yarn setup:cli",
@@ -73,6 +74,7 @@
     "hooks:pre-push": "node ./hooks/pre-push.js",
     "gen:meta": "node ./bootstrap/scripts/genMeta.js",
     "gen:links": "node ./bootstrap/scripts/linkAll.js",
+    "gen:validation": "./bootstrap/scripts/genValidation.sh",
     "backend:updateDendronDeps": "node bootstrap/backend/updateDendronhqDeps.js"
   },
   "packages": [
