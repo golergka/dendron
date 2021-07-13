@@ -59,7 +59,7 @@ function basicTest({
   });
 }
 
-suite(DENDRON_COMMANDS.RANDOM_NOTE.key, function () {
+suite.only(DENDRON_COMMANDS.RANDOM_NOTE.key, function () {
   let ctx: vscode.ExtensionContext;
   ctx = setupBeforeAfter(this, {});
 
