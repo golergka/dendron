@@ -13,8 +13,9 @@ import { runEngineTestV5 } from "../../engine";
 import { ENGINE_HOOKS } from "../../presets";
 import { checkNotInString, checkString } from "../../utils";
 
-describe("markdown publish pod", () => {
+describe.only("markdown publish pod", () => {
   test("basic", async () => {
+    debugger;
     await runEngineTestV5(
       async ({ engine, vaults, wsRoot }) => {
         const pod = new MarkdownPublishPod();
